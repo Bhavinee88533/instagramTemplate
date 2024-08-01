@@ -7,6 +7,9 @@ app.listen(port,()=>{
 })
 app.set("view engine","ejs");
 
+app.use(express.static("public/css"));
+app.use(express.static("public/js"))
+
 app.get("/ig/:username",(req,res)=>{
     let {username}=req.params;
     let instadata=require("./data.json");

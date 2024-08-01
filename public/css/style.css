@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(164, 95, 95);
+    color: rgb(246, 210, 164);
+    padding: 100px;
+  }
+  .container{
+      padding: 100px;
+       width: 600px;
+       font-weight: 600;
+       font-size: larger;
+       color: aliceblue;
+   }
+   img{
+       height: 300px;
+   }

@@ -1,7 +1,9 @@
-<%- include("/includes/head.ejs")%>
+<%- include("includes/head.ejs") %>
+<h1>This is Instagram Account of <%= data.name %></h1>
+<hr>
+<button>Follow</button> &nbsp;&nbsp;&nbsp;&nbsp; <button>Message</button>
     <div class="container">
         <div class="box1">
-            <h1>This is Instagram Account of <%= data.name %></h1>
             <p>Followers:<%= data.followers%>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Following:<%=data.following%> </p>
             <hr>
             <% for(let post of data.posts){ %>
@@ -12,16 +14,6 @@
            <% } %>
         </div>
     </div>
-    <style>
-        .container{
-           padding: 100px;
-            width: 600px;
-            font-weight: 600;
-            font-size: larger;
-        }
-        img{
-            height: 300px;
-        }
-    </style>
 </body>
+<script src="/js.js"></script>
 </html>
